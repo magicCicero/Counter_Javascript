@@ -11,7 +11,12 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(#e66465, #9198e5);
+  background: rgb(235, 116, 232);
+  background: linear-gradient(
+    207deg,
+    rgba(235, 116, 232, 1) 0%,
+    rgba(80, 61, 244, 1) 100%
+  );
 }
 form {
   display: grid;
@@ -36,4 +41,10 @@ input {
   padding: 1rem;
   font-size: 2rem;
   font-weight: bold;
+  border-radius: 3px;
+  border: 0px;
+  transition: all 0.1s ease;
+}
+input:hover {
+  transform: scale(1.1);
 }
